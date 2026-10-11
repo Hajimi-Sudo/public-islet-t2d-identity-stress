@@ -1,0 +1,53 @@
+{
+  "source": "GTEx Analysis v8 gene median TPM (portal-public GCT)",
+  "file": "GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz",
+  "n_tissues": 54,
+  "note": "GTEx has bulk Pancreas, not purified islets. This is a tissue-selectivity overlay, not a T2D test.",
+  "identity_expected": "IDENTITY_CORE_v1 mean pancreas enrichment >> STRESS_CORE_v1",
+  "sets": [
+    {
+      "set": "IDENTITY_CORE_v1",
+      "n_genes": 21,
+      "mean_pancreas_tpm": 114.52688709523811,
+      "median_pancreas_tpm": 2.01508,
+      "mean_other_tissue_median_tpm": 1.0592389476190474,
+      "mean_pancreas_vs_other_median": 564.402905868249,
+      "median_pancreas_vs_other_median": 10.084061750807559,
+      "frac_genes_pancreas_gt_2x_other": 0.8571428571428571,
+      "frac_genes_pancreas_gt_5x_other": 0.7619047619047619
+    },
+    {
+      "set": "STRESS_CORE_v1",
+      "n_genes": 18,
+      "mean_pancreas_tpm": 108.17974166666666,
+      "median_pancreas_tpm": 22.242649999999998,
+      "mean_other_tissue_median_tpm": 112.04019555555556,
+      "mean_pancreas_vs_other_median": 1.856598111611094,
+      "median_pancreas_vs_other_median": 1.04428541095483,
+      "frac_genes_pancreas_gt_2x_other": 0.16666666666666666,
+      "frac_genes_pancreas_gt_5x_other": 0.1111111111111111
+    },
+    {
+      "set": "HALLMARK_PANCREAS_BETA_CELLS",
+      "n_genes": 40,
+      "mean_pancreas_tpm": 81.65418476750001,
+      "median_pancreas_tpm": 3.470035,
+      "mean_other_tissue_median_tpm": 16.1228973025,
+      "mean_pancreas_vs_other_median": 383.81346796075496,
+      "median_pancreas_vs_other_median": 4.440756130403705,
+      "frac_genes_pancreas_gt_2x_other": 0.55,
+      "frac_genes_pancreas_gt_5x_other": 0.5
+    },
+    {
+      "set": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+      "n_genes": 108,
+      "mean_pancreas_tpm": 61.609825403703695,
+      "median_pancreas_tpm": 18.29705,
+      "mean_other_tissue_median_tpm": 70.45751569537036,
+      "mean_pancreas_vs_other_median": 0.8375235151636088,
+      "median_pancreas_vs_other_median": 0.583079036588452,
+      "frac_genes_pancreas_gt_2x_other": 0.05555555555555555,
+      "frac_genes_pancreas_gt_5x_other": 0.018518518518518517
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "GPL570": {
+    "source": "geo_annot:GPL570.annot.gz",
+    "n_probes": 54675,
+    "n_with_symbol": 45117
+  },
+  "GPL6244": {
+    "source": "geo_annot:GPL6244.annot.gz",
+    "n_probes": 33297,
+    "n_with_symbol": 22195
+  },
+  "GPL1352": {
+    "source": "geo_annot:GPL1352.annot.gz",
+    "n_probes": 61359,
+    "n_with_symbol": 48856
+  }
+}
