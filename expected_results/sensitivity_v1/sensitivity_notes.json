@@ -1,0 +1,12 @@
+{
+  "n_perm": 500,
+  "rng_seed": 66,
+  "drop5_genes": [
+    "PDX1",
+    "MAFA",
+    "KCNJ11",
+    "UCN3",
+    "GJD2"
+  ],
+  "note": "Sensitivity only. Primary four tests remain the locked family."
+}

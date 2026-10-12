@@ -23,7 +23,7 @@ Code repository: https://github.com/Hajimi-Sudo/public-islet-t2d-identity-stress
 | `data/phenotypes/` | Donor-level GEO phenotypes used in the paper |
 | `data/overlays/` | Frozen Open Targets MONDO_0005148 top-500 snapshot |
 | `src/` | Download, scoring, overlay, sensitivity, and figure scripts |
-| `expected_results/` | Frozen numerical snapshots from the locked run |
+| `expected_results/` | Frozen numerical snapshots from the locked run, including `sensitivity_v1/` |
 | `manuscript_figures/` | Frozen Figure 1–4 PDFs used in the manuscript |
 
 ## What is **not** in git
