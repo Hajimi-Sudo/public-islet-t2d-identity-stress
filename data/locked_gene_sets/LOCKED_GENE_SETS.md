@@ -30,3 +30,20 @@ Secondary stress program.
 ## Explicitly not locked from these GEO series
 
 No gene is added or removed because it was DE in T2D in these four series. WGCNA hub genes are forbidden.
+
+## Why these genes (not a T2D DE list)
+
+IDENTITY_CORE_v1 is three literature classes frozen before any T2D contrast:
+identity transcription factors (PDX1, MAFA, MAFB, NKX6-1, NKX2-2, NEUROD1, PAX6, ISL1);
+insulin peptide and processing (INS, IAPP, PCSK1, PCSK2);
+glucose-sensing / GSIS machinery (SLC2A2, GCK, SLC30A8, ABCC8, KCNJ11, UCN3, FFAR1, GLP1R, GJD2).
+
+STRESS_CORE_v1 is canonical UPR/ER-stress:
+PERK (EIF2AK3, ATF4, DDIT3, PPP1R15A, plus ATF3, TRIB3);
+IRE1 (ERN1, XBP1);
+ATF6 (ATF6, PDIA4);
+shared chaperones/ERAD (HSPA5, HSP90B1, HYOU1, DNAJC3, HERPUD1, DERL3);
+islet-relevant ER-stress genes (TXNIP, WFS1).
+
+Gene-level function and evidence: `TableS1_locked_gene_rationale.csv` (this folder) and manuscript Supplementary Tables S1–S2.
+Hallmark overlap is an alignment check, not the source of the locked cores.

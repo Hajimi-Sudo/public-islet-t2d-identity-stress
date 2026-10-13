@@ -1,0 +1,40 @@
+gene,program,function_en,evidence_en,function_zh,evidence_zh
+INS,IDENTITY_CORE_v1,Insulin peptide; defining β-cell secretory product,Canonical β-cell identity and insulin-secretory marker (Guo 2013; van Gurp 2022). Overlaps Hallmark PANCREAS_BETA_CELLS (Liberzon 2015).,胰岛素肽；β细胞标志性分泌产物,经典β细胞身份与胰岛素分泌标记（Guo 2013；van Gurp 2022）。与Hallmark PANCREAS_BETA_CELLS重叠（Liberzon 2015）。
+IAPP,IDENTITY_CORE_v1,Islet amyloid polypeptide co-secreted with insulin,"Adult β-cell secretory identity marker (van Gurp 2022; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",与胰岛素共分泌的胰岛淀粉样多肽,成人β细胞分泌身份标记（van Gurp 2022；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+PDX1,IDENTITY_CORE_v1,Master β-cell identity transcription factor,Identity TF inactivated in T2D β cells (Guo 2013; Talchai 2012; van Gurp 2022).,主控β细胞身份转录因子,T2D β细胞中失活的身份转录因子（Guo 2013；Talchai 2012；van Gurp 2022）。
+MAFA,IDENTITY_CORE_v1,Mature β-cell transcription factor,Maturation/identity TF lost or inactivated in T2D (Guo 2013; Cinti 2016).,成熟β细胞转录因子,T2D中丢失或失活的成熟/身份转录因子（Guo 2013；Cinti 2016）。
+MAFB,IDENTITY_CORE_v1,Islet endocrine transcription factor supporting adult β-cell identity,"Adult human islet identity TF (van Gurp 2022; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",支持成人β细胞身份的胰岛内分泌转录因子,成人胰岛身份转录因子（van Gurp 2022；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+NKX6-1,IDENTITY_CORE_v1,β-cell identity transcription factor,Identity TF inactivated in T2D β cells (Guo 2013; van Gurp 2022).,β细胞身份转录因子,T2D β细胞中失活的身份转录因子（Guo 2013；van Gurp 2022）。
+NKX2-2,IDENTITY_CORE_v1,Endocrine identity transcription factor,β-cell identity network TF (Guo 2013; van Gurp 2022).,内分泌身份转录因子,β细胞身份网络转录因子（Guo 2013；van Gurp 2022）。
+NEUROD1,IDENTITY_CORE_v1,β-cell transcription factor for insulin-gene transcription and identity,"Identity TF (Guo 2013; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",参与胰岛素基因转录与身份的β细胞转录因子,身份转录因子（Guo 2013；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+PAX6,IDENTITY_CORE_v1,Pancreatic endocrine identity transcription factor,"Islet identity TF (van Gurp 2022; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",胰腺内分泌身份转录因子,胰岛身份转录因子（van Gurp 2022；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+ISL1,IDENTITY_CORE_v1,LIM-homeodomain islet identity transcription factor,"Islet identity TF (van Gurp 2022; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",LIM同源结构域胰岛身份转录因子,胰岛身份转录因子（van Gurp 2022；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+SLC2A2,IDENTITY_CORE_v1,GLUT2 glucose transporter; glucose sensing,"Glucose-sensing machinery of mature β cells (Yau 2025; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",GLUT2葡萄糖转运体；葡萄糖感知,成熟β细胞葡萄糖感知机器（Yau 2025；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+SLC30A8,IDENTITY_CORE_v1,Zinc transporter ZnT8 in insulin granules,Insulin-granule / GSIS machinery; T2D-associated locus (Wang 2023; Yau 2025).,胰岛素颗粒锌转运体ZnT8,胰岛素颗粒/GSIS机器；T2D关联位点（Wang 2023；Yau 2025）。
+GCK,IDENTITY_CORE_v1,Glucokinase; β-cell glucose sensor,"Glucose-sensing enzyme of β cells (Yau 2025; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",葡萄糖激酶；β细胞葡萄糖传感器,β细胞葡萄糖感知酶（Yau 2025；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+PCSK1,IDENTITY_CORE_v1,Prohormone convertase 1/3; insulin processing,"Insulin-secretory processing enzyme (Yau 2025; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",前激素转化酶1/3；胰岛素加工,胰岛素分泌加工酶（Yau 2025；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+PCSK2,IDENTITY_CORE_v1,Prohormone convertase 2; insulin/IAPP processing,"Insulin-secretory processing enzyme (Yau 2025; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",前激素转化酶2；胰岛素/IAPP加工,胰岛素分泌加工酶（Yau 2025；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+ABCC8,IDENTITY_CORE_v1,SUR1 subunit of the KATP channel,"Insulin-secretory channel machinery (Yau 2025; Hallmark PANCREAS_BETA_CELLS, Liberzon 2015).",KATP通道SUR1亚基,胰岛素分泌通道机器（Yau 2025；Hallmark PANCREAS_BETA_CELLS，Liberzon 2015）。
+KCNJ11,IDENTITY_CORE_v1,Kir6.2 subunit of the KATP channel,Insulin-secretory channel machinery (Yau 2025).,KATP通道Kir6.2亚基,胰岛素分泌通道机器（Yau 2025）。
+UCN3,IDENTITY_CORE_v1,Urocortin-3; mature β-cell peptide,Maturation/identity secretory marker of adult β cells (Yau 2025). Not selected from T2D differential expression.,urocortin-3；成熟β细胞肽,成人β细胞成熟/身份分泌标记（Yau 2025）。并非由T2D差异表达选出。
+FFAR1,IDENTITY_CORE_v1,GPR40 free-fatty-acid receptor amplifying GSIS,Insulin-secretory receptor machinery (Yau 2025).,放大GSIS的GPR40游离脂肪酸受体,胰岛素分泌受体机器（Yau 2025）。
+GLP1R,IDENTITY_CORE_v1,GLP-1 receptor on β cells,Incretin-amplified insulin secretion (Yau 2025).,β细胞GLP-1受体,肠促胰素放大的胰岛素分泌（Yau 2025）。
+GJD2,IDENTITY_CORE_v1,Connexin 36; β-cell gap junctions coordinating GSIS,Identity-linked electrical coupling of β cells (Yau 2025).,连接蛋白36；协调GSIS的β细胞缝隙连接,与身份相关的β细胞电偶联（Yau 2025）。
+DDIT3,STRESS_CORE_v1,CHOP; PERK/ATF4 effector of unresolved ER stress,Canonical PERK–ATF4–CHOP arm (Back 2012; Papa 2012).,CHOP；未缓解ER应激的PERK/ATF4效应因子,经典PERK–ATF4–CHOP臂（Back 2012；Papa 2012）。
+ATF3,STRESS_CORE_v1,Stress-inducible ATF/CREB factor downstream of eIF2α,"UPR/ISR transcriptional effector (Back 2012; Hallmark UPR, Liberzon 2015).",eIF2α下游应激诱导ATF/CREB因子,UPR/ISR转录效应因子（Back 2012；Hallmark UPR，Liberzon 2015）。
+ATF4,STRESS_CORE_v1,Integrated-stress / PERK effector transcription factor,"Canonical PERK arm (Back 2012; Hallmark UPR, Liberzon 2015).",整合应激/PERK效应转录因子,经典PERK臂（Back 2012；Hallmark UPR，Liberzon 2015）。
+ATF6,STRESS_CORE_v1,ATF6-branch UPR transcription factor,"Canonical ATF6 arm (Back 2012; Hallmark UPR, Liberzon 2015).",ATF6支路UPR转录因子,经典ATF6臂（Back 2012；Hallmark UPR，Liberzon 2015）。
+XBP1,STRESS_CORE_v1,IRE1-spliced UPR transcription factor,"Canonical IRE1–XBP1 arm (Back 2012; Papa 2012; Hallmark UPR, Liberzon 2015).",IRE1剪接的UPR转录因子,经典IRE1–XBP1臂（Back 2012；Papa 2012；Hallmark UPR，Liberzon 2015）。
+HSPA5,STRESS_CORE_v1,BiP/GRP78 ER chaperone and UPR sensor,"Shared UPR chaperone, not arm-specific (Back 2012; Hallmark UPR, Liberzon 2015).",BiP/GRP78内质网伴侣与UPR感受器,共享UPR伴侣，非臂特异（Back 2012；Hallmark UPR，Liberzon 2015）。
+EIF2AK3,STRESS_CORE_v1,PERK kinase; ER-stress sensor,"Canonical PERK sensor (Back 2012; Hallmark UPR, Liberzon 2015).",PERK激酶；ER应激感受器,经典PERK感受器（Back 2012；Hallmark UPR，Liberzon 2015）。
+ERN1,STRESS_CORE_v1,IRE1α kinase/RNase; ER-stress sensor,"Canonical IRE1 sensor (Back 2012; Hallmark UPR, Liberzon 2015).",IRE1α激酶/RNase；ER应激感受器,经典IRE1感受器（Back 2012；Hallmark UPR，Liberzon 2015）。
+TRIB3,STRESS_CORE_v1,ATF4/CHOP-inducible pseudokinase,PERK/ATF4 effector (Back 2012; Sharma 2015).,ATF4/CHOP诱导的假激酶,PERK/ATF4效应因子（Back 2012；Sharma 2015）。
+DNAJC3,STRESS_CORE_v1,p58IPK ER co-chaperone regulating PERK,"UPR co-chaperone (Back 2012; Hallmark UPR, Liberzon 2015).",调节PERK的p58IPK内质网共伴侣,UPR共伴侣（Back 2012；Hallmark UPR，Liberzon 2015）。
+PDIA4,STRESS_CORE_v1,ER protein disulfide isomerase,ATF6-associated folding enzyme (Back 2012; Sokolowski 2024).,内质网蛋白二硫键异构酶,ATF6相关折叠酶（Back 2012；Sokolowski 2024）。
+TXNIP,STRESS_CORE_v1,Thioredoxin-interacting protein induced by islet ER stress,Islet-relevant ER-stress gene (Sharma 2015; Sokolowski 2024).,胰岛ER应激诱导的硫氧还蛋白相互作用蛋白,胰岛相关ER应激基因（Sharma 2015；Sokolowski 2024）。
+PPP1R15A,STRESS_CORE_v1,GADD34; eIF2α phosphatase in PERK recovery,Canonical PERK recovery arm (Back 2012; Papa 2012).,GADD34；PERK恢复中的eIF2α磷酸酶,经典PERK恢复臂（Back 2012；Papa 2012）。
+HERPUD1,STRESS_CORE_v1,ERAD ubiquitin-like protein,"UPR/ERAD component (Back 2012; Hallmark UPR, Liberzon 2015).",ERAD泛素样蛋白,UPR/ERAD组分（Back 2012；Hallmark UPR，Liberzon 2015）。
+DERL3,STRESS_CORE_v1,Derlin-3 ERAD channel component,ERAD/UPR clearance machinery (Back 2012; Sokolowski 2024).,Derlin-3 ERAD通道组分,ERAD/UPR清除机器（Back 2012；Sokolowski 2024）。
+WFS1,STRESS_CORE_v1,Wolfram ER protein; β-cell ER homeostasis,"Islet-relevant ER-stress gene (Papa 2012; Hallmark UPR, Liberzon 2015).",Wolfram内质网蛋白；β细胞ER稳态,胰岛相关ER应激基因（Papa 2012；Hallmark UPR，Liberzon 2015）。
+HSP90B1,STRESS_CORE_v1,GRP94 ER chaperone,"Canonical ER chaperone (Back 2012; Hallmark UPR, Liberzon 2015).",GRP94内质网伴侣,经典内质网伴侣（Back 2012；Hallmark UPR，Liberzon 2015）。
+HYOU1,STRESS_CORE_v1,ORP150 / hypoxia-upregulated ER chaperone,ER chaperone in Hallmark UPR (Back 2012; Liberzon 2015).,ORP150/缺氧上调内质网伴侣,Hallmark UPR中的内质网伴侣（Back 2012；Liberzon 2015）。

@@ -19,7 +19,7 @@ Code repository: https://github.com/Hajimi-Sudo/public-islet-t2d-identity-stress
 
 | Path | Contents |
 |---|---|
-| `data/locked_gene_sets/` | Frozen identity/stress sets plus composition proxies and UPR-arm splits |
+| `data/locked_gene_sets/` | Frozen identity/stress sets, gene-level rationale (Table S1), composition proxies, and UPR-arm splits |
 | `data/phenotypes/` | Donor-level GEO phenotypes used in the paper |
 | `data/overlays/` | Frozen Open Targets MONDO_0005148 top-500 snapshot |
 | `src/` | Download, scoring, overlay, sensitivity, and figure scripts |
@@ -69,6 +69,10 @@ Additional bulk-composition checks score three short marker means that **do not 
 An additional UPR-arm split scores PERK (`EIF2AK3`, `ATF4`, `DDIT3`, `PPP1R15A`), IRE1 (`ERN1`, `XBP1`, `HSPA5`), and ATF6 (`ATF6`, `HSPA5`, `PDIA4`) using only genes already in `STRESS_CORE_v1`. Arm scores do not replace the 18-gene stress mean.
 
 Detectable-effect checks report 80%-power MDEs from the primary OLS standard errors. GSE76894 T2D n=19 can detect large bulk differences, not small UPR effects. This is not observed-effect post-hoc power.
+
+## Gene-set rationale
+
+IDENTITY_CORE_v1 and STRESS_CORE_v1 were frozen from literature function before any T2D contrast. They are not differential-expression lists from GSE50244 / GSE38642 / GSE76894 / GSE20966. Gene-level function and evidence are in `data/locked_gene_sets/TableS1_locked_gene_rationale.csv`.
 
 ## Requirements
 
