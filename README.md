@@ -23,7 +23,7 @@ Code repository: https://github.com/Hajimi-Sudo/public-islet-t2d-identity-stress
 | `data/phenotypes/` | Donor-level GEO phenotypes used in the paper |
 | `data/overlays/` | Frozen Open Targets MONDO_0005148 top-500 snapshot |
 | `src/` | Download, scoring, overlay, sensitivity, and figure scripts |
-| `expected_results/` | Frozen numerical snapshots from the locked run, including `sensitivity_v1/`, `composition_sensitivity_v1/`, and `upr_arm_split_v1/` |
+| `expected_results/` | Frozen numerical snapshots, including sensitivity, composition, UPR-arm, and power checks |
 | `manuscript_figures/` | Frozen Figure 1–4 PDFs used in the manuscript |
 
 ## What is **not** in git
@@ -68,6 +68,8 @@ Additional bulk-composition checks score three short marker means that **do not 
 
 An additional UPR-arm split scores PERK (`EIF2AK3`, `ATF4`, `DDIT3`, `PPP1R15A`), IRE1 (`ERN1`, `XBP1`, `HSPA5`), and ATF6 (`ATF6`, `HSPA5`, `PDIA4`) using only genes already in `STRESS_CORE_v1`. Arm scores do not replace the 18-gene stress mean.
 
+Detectable-effect checks report 80%-power MDEs from the primary OLS standard errors. GSE76894 T2D n=19 can detect large bulk differences, not small UPR effects. This is not observed-effect post-hoc power.
+
 ## Requirements
 
 Python 3.10+ and the packages in `requirements.txt`:
@@ -104,6 +106,9 @@ python3 src/run_composition_sensitivity.py
 # 5c. Additional UPR-arm split (optional; does not replace STRESS_CORE_v1)
 python3 src/run_upr_arm_split.py
 
+# 5d. Detectable-effect checks (optional; not observed-effect post-hoc power)
+python3 src/run_power_analysis.py
+
 # 6. Figures/tables into results/
 python3 src/make_figures.py
 
@@ -126,7 +131,7 @@ bash run_all.sh
 
 `download_public_data.py` skips a file when the local size matches the expected NCBI/GTEx byte count. If a fetch fails under a proxy, it retries once with proxy environment variables unset.
 
-Outputs are written to `results/` (`locked_scores_v1/`, `gtex_overlay_v1/`, `gwas_overlay_v1/`, `sensitivity_v1/`, `composition_sensitivity_v1/`, `upr_arm_split_v1/`, `figures/`, `tables/`).
+Outputs are written to `results/` (`locked_scores_v1/`, `gtex_overlay_v1/`, `gwas_overlay_v1/`, `sensitivity_v1/`, `composition_sensitivity_v1/`, `upr_arm_split_v1/`, `power_analysis_v1/`, `figures/`, `tables/`).
 
 ## Scoring rule
 

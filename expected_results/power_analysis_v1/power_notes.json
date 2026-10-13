@@ -1,0 +1,10 @@
+{
+  "role": "detectable_effect_not_observed_power",
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "two_sided": true,
+  "gse76894_t2d_n": 19,
+  "gse76894_nd_n": 84,
+  "unadjusted_mde_cohens_d_80pct": 0.7185709758919001,
+  "note": "MDE uses the fitted OLS coefficient SE and residual df. Observed-effect power is reported only as a diagnostic and is not a claim."
+}
