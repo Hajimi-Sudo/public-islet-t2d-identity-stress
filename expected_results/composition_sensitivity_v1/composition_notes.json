@@ -1,0 +1,25 @@
+{
+  "role": "additional_composition_covariates",
+  "replaces_primary_four_tests": false,
+  "circular_overlap_identity": [],
+  "circular_overlap_stress": [],
+  "beta_proxy_genes": [
+    "G6PC2",
+    "INSM1",
+    "SCGN",
+    "SYT13"
+  ],
+  "exocrine_proxy_genes": [
+    "PRSS1",
+    "CPA1",
+    "CELA3A",
+    "AMY2A",
+    "CTRB1"
+  ],
+  "endocrine_nonbeta_genes": [
+    "GCG",
+    "SST",
+    "PPY"
+  ],
+  "note": "Marker-mean proxies, not deconvolution. IDENTITY_CORE_v1 genes were not used as abundance covariates."
+}

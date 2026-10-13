@@ -20,6 +20,9 @@ python3 src/run_opentargets_overlay.py
 echo "==> sensitivity (does not replace the primary four tests)"
 python3 src/run_sensitivity.py
 
+echo "==> additional composition covariates (not deconvolution; does not replace the primary four tests)"
+python3 src/run_composition_sensitivity.py
+
 echo "==> figures"
 python3 src/make_figures.py
 

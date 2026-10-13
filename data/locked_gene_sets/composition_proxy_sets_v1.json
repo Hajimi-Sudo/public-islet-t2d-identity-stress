@@ -1,0 +1,28 @@
+{
+  "artifact_type": "composition_proxy_sets",
+  "topic_id": 66,
+  "frozen_at": "2026-10-13",
+  "role": "additional_composition_covariates",
+  "replaces_primary_four_tests": false,
+  "from_t2d_differential_expression": false,
+  "notes": [
+    "Bulk islet RNA cannot separate beta-cell identity loss from a change in beta-cell abundance or exocrine contamination.",
+    "IDENTITY_CORE_v1 genes (INS, IAPP, PDX1, MAFA, PCSK1, ...) are NOT used as the abundance covariate, because that adjustment is circular.",
+    "These short panels are literature islet/exocrine markers that do not overlap IDENTITY_CORE_v1 or STRESS_CORE_v1.",
+    "Marker means are not cell-type deconvolution."
+  ],
+  "sets": {
+    "BETA_ABUNDANCE_PROXY_v1": {
+      "source": "Short adult beta-cell markers outside IDENTITY_CORE_v1. G6PC2, INSM1, SCGN, and SYT13 are in HALLMARK_PANCREAS_BETA_CELLS (Liberzon et al. 2015) and are not in the locked 21-gene identity core.",
+      "genes": ["G6PC2", "INSM1", "SCGN", "SYT13"]
+    },
+    "EXOCRINE_CONTAMINATION_PROXY_v1": {
+      "source": "Canonical acinar/exocrine transcripts used as a bulk-islet purity/contamination proxy (trypsin, carboxypeptidase A1, elastase, amylase, chymotrypsin).",
+      "genes": ["PRSS1", "CPA1", "CELA3A", "AMY2A", "CTRB1"]
+    },
+    "ENDOCRINE_NONBETA_PROXY_v1": {
+      "source": "Alpha, delta, and PP hormones as a non-beta endocrine composition proxy. GCG and SST are in HALLMARK_PANCREAS_BETA_CELLS but are not beta-cell identity genes and are not in IDENTITY_CORE_v1.",
+      "genes": ["GCG", "SST", "PPY"]
+    }
+  }
+}
