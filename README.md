@@ -19,11 +19,11 @@ Code repository: https://github.com/Hajimi-Sudo/public-islet-t2d-identity-stress
 
 | Path | Contents |
 |---|---|
-| `data/locked_gene_sets/` | Frozen identity/stress sets plus additional composition proxies (`composition_proxy_sets_v1.json`) |
+| `data/locked_gene_sets/` | Frozen identity/stress sets plus composition proxies and UPR-arm splits |
 | `data/phenotypes/` | Donor-level GEO phenotypes used in the paper |
 | `data/overlays/` | Frozen Open Targets MONDO_0005148 top-500 snapshot |
 | `src/` | Download, scoring, overlay, sensitivity, and figure scripts |
-| `expected_results/` | Frozen numerical snapshots from the locked run, including `sensitivity_v1/` and `composition_sensitivity_v1/` |
+| `expected_results/` | Frozen numerical snapshots from the locked run, including `sensitivity_v1/`, `composition_sensitivity_v1/`, and `upr_arm_split_v1/` |
 | `manuscript_figures/` | Frozen Figure 1–4 PDFs used in the manuscript |
 
 ## What is **not** in git
@@ -66,6 +66,8 @@ Joint identity-down **and** stress-up language is blocked. Sensitivity analyses 
 
 Additional bulk-composition checks score three short marker means that **do not overlap** `IDENTITY_CORE_v1`: a 4-gene β-cell abundance proxy (`G6PC2`, `INSM1`, `SCGN`, `SYT13`), an exocrine contamination proxy, and a non-β endocrine proxy. These are not deconvolution. On these matrices the β-cell abundance proxy is collinear with the identity score, so reduced identity scores may partly reflect bulk β-cell abundance.
 
+An additional UPR-arm split scores PERK (`EIF2AK3`, `ATF4`, `DDIT3`, `PPP1R15A`), IRE1 (`ERN1`, `XBP1`, `HSPA5`), and ATF6 (`ATF6`, `HSPA5`, `PDIA4`) using only genes already in `STRESS_CORE_v1`. Arm scores do not replace the 18-gene stress mean.
+
 ## Requirements
 
 Python 3.10+ and the packages in `requirements.txt`:
@@ -99,6 +101,9 @@ python3 src/run_sensitivity.py
 # 5b. Additional composition covariates (optional; not deconvolution)
 python3 src/run_composition_sensitivity.py
 
+# 5c. Additional UPR-arm split (optional; does not replace STRESS_CORE_v1)
+python3 src/run_upr_arm_split.py
+
 # 6. Figures/tables into results/
 python3 src/make_figures.py
 
@@ -121,7 +126,7 @@ bash run_all.sh
 
 `download_public_data.py` skips a file when the local size matches the expected NCBI/GTEx byte count. If a fetch fails under a proxy, it retries once with proxy environment variables unset.
 
-Outputs are written to `results/` (`locked_scores_v1/`, `gtex_overlay_v1/`, `gwas_overlay_v1/`, `sensitivity_v1/`, `composition_sensitivity_v1/`, `figures/`, `tables/`).
+Outputs are written to `results/` (`locked_scores_v1/`, `gtex_overlay_v1/`, `gwas_overlay_v1/`, `sensitivity_v1/`, `composition_sensitivity_v1/`, `upr_arm_split_v1/`, `figures/`, `tables/`).
 
 ## Scoring rule
 

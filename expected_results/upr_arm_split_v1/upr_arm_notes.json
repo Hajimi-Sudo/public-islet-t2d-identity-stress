@@ -1,0 +1,25 @@
+{
+  "role": "additional_upr_arm_split",
+  "replaces_primary_four_tests": false,
+  "parent_set": "STRESS_CORE_v1",
+  "arms": {
+    "PERK_ARM_v1": [
+      "EIF2AK3",
+      "ATF4",
+      "DDIT3",
+      "PPP1R15A"
+    ],
+    "IRE1_ARM_v1": [
+      "ERN1",
+      "XBP1",
+      "HSPA5"
+    ],
+    "ATF6_ARM_v1": [
+      "ATF6",
+      "HSPA5",
+      "PDIA4"
+    ]
+  },
+  "shared_gene": "HSPA5",
+  "note": "Arm scores are subsets of STRESS_CORE_v1. They do not replace the locked 18-gene stress mean."
+}

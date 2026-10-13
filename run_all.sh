@@ -23,6 +23,9 @@ python3 src/run_sensitivity.py
 echo "==> additional composition covariates (not deconvolution; does not replace the primary four tests)"
 python3 src/run_composition_sensitivity.py
 
+echo "==> additional UPR-arm split (does not replace STRESS_CORE_v1)"
+python3 src/run_upr_arm_split.py
+
 echo "==> figures"
 python3 src/make_figures.py
 

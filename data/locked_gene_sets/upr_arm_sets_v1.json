@@ -1,0 +1,29 @@
+{
+  "artifact_type": "upr_arm_sets",
+  "topic_id": 66,
+  "frozen_at": "2026-10-13",
+  "role": "additional_upr_arm_split",
+  "replaces_primary_four_tests": false,
+  "from_t2d_differential_expression": false,
+  "parent_set": "STRESS_CORE_v1",
+  "notes": [
+    "Split of the locked 18-gene stress/UPR core into canonical PERK, IRE1, and ATF6 arms.",
+    "Genes are a subset of STRESS_CORE_v1. No gene is added from differential expression.",
+    "HSPA5/BiP is shared by the IRE1 and ATF6 short means because it is a shared UPR chaperone, not an arm-specific transcription factor.",
+    "These arm scores do not replace STRESS_CORE_v1 in the primary four-test family."
+  ],
+  "sets": {
+    "PERK_ARM_v1": {
+      "source": "Canonical PERK/EIF2AK3-ATF4-CHOP/GADD34 arm inside STRESS_CORE_v1.",
+      "genes": ["EIF2AK3", "ATF4", "DDIT3", "PPP1R15A"]
+    },
+    "IRE1_ARM_v1": {
+      "source": "Canonical IRE1/ERN1-XBP1 arm plus BiP/HSPA5 inside STRESS_CORE_v1.",
+      "genes": ["ERN1", "XBP1", "HSPA5"]
+    },
+    "ATF6_ARM_v1": {
+      "source": "Canonical ATF6 arm plus BiP/HSPA5 and PDIA4 inside STRESS_CORE_v1.",
+      "genes": ["ATF6", "HSPA5", "PDIA4"]
+    }
+  }
+}
