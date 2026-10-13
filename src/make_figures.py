@@ -56,7 +56,7 @@ def fig1_design() -> None:
     box(5.15, 4.85, 4.6, 1.1, "STRESS_CORE_v1  (18 genes)\nDDIT3, ATF4, XBP1, HSPA5, TXNIP…\nPrespecified direction: up in T2D / hyperglycemia", fc="#F5CBA7", ec=RUST)
     ax.text(5.0, 4.62, "Both scores applied to every cohort below", ha="center", va="center", fontsize=8, color=GRAY, style="italic")
     box(0.25, 2.95, 2.25, 1.4, "Discovery\nGSE50244 RNA-seq\nn=89 islets\nHbA1c endpoint\n(n=77 complete)", fc="#E8F6F3")
-    box(2.65, 2.95, 2.25, 1.4, "Independent\nvalidation\nGSE76894 array\n19 T2D / 84 ND\nage/sex/BMI/batch", fc="#D5F5E3", ec="#196F3D")
+    box(2.65, 2.95, 2.25, 1.4, "External\nvalidation\nGSE76894 array\n19 T2D / 84 ND\nage/sex/BMI/batch", fc="#D5F5E3", ec="#196F3D")
     box(5.05, 2.95, 2.25, 1.4, "Same-biobank\ncompanion\nGSE38642 array\n53/89 donor overlap\nnot independent", fc="#F4F6F7", ec=GRAY)
     box(7.45, 2.95, 2.3, 1.4, "Orthogonal LCM\nGSE20966\n10 vs 10\nunderpowered check", fc="#F4F6F7", ec=GRAY)
     box(0.25, 0.25, 4.6, 2.35, "Primary family (4 tests)\nIdentity and stress on:\n• GSE50244  score ~ HbA1c + age + sex + BMI\n• GSE76894  score ~ T2D + age + sex + BMI + batch\nNo gene added from differential expression.\nStress-up is allowed to fail.", fc="#FCF3CF", ec="#B7950B")
@@ -157,7 +157,7 @@ def write_tables() -> None:
     t1 = pd.DataFrame(
         [
             {"Series": "GSE50244", "Role": "Discovery", "Platform": "RNA-seq (GPL11154)", "n": 89, "T2D / ND": "no GEO T2D field; HbA1c on 77/89 (11 ≥ 6.5%)", "Age, years": "58.3 ± 10.7", "BMI": "26.0 ± 3.1", "Sex (M/F)": "54/35"},
-            {"Series": "GSE76894", "Role": "Independent validation", "Platform": "HG-U133 Plus 2 (GPL570)", "n": 103, "T2D / ND": "19 / 84", "Age, years": "ND 60.0 ± 16.1; T2D 72.2 ± 7.5", "BMI": "ND 25.8 ± 4.2; T2D 26.5 ± 3.6", "Sex (M/F)": "ND 38/46; T2D 13/6"},
+            {"Series": "GSE76894", "Role": "External validation", "Platform": "HG-U133 Plus 2 (GPL570)", "n": 103, "T2D / ND": "19 / 84", "Age, years": "ND 60.0 ± 16.1; T2D 72.2 ± 7.5", "BMI": "ND 25.8 ± 4.2; T2D 26.5 ± 3.6", "Sex (M/F)": "ND 38/46; T2D 13/6"},
             {"Series": "GSE38642", "Role": "Same-biobank companion", "Platform": "HuGene 1.0 ST (GPL6244)", "n": 63, "T2D / ND": "9 / 54", "Age, years": "ND 56.6 ± 9.8; T2D 57.0 ± 13.1", "BMI": "ND 26.0; T2D 28.5", "Sex (M/F)": "ND 31/23; T2D 5/4"},
             {"Series": "GSE20966", "Role": "Orthogonal LCM check", "Platform": "X3P (GPL1352)", "n": 20, "T2D / ND": "10 / 10", "Age, years": "ND 60.3; T2D 67.3", "BMI": "ND 30.6; T2D 30.9", "Sex (M/F)": "ND 6/4; T2D 7/3"},
         ]

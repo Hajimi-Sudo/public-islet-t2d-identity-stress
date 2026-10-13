@@ -45,7 +45,7 @@ Also excluded on purpose:
 | Series | Role | Endpoint |
 |---|---|---|
 | GSE50244 | Discovery | continuous HbA1c (n=77 complete); **no** GEO T2D field |
-| GSE76894 | Independent validation | recorded T2D vs ND, adjusted for age, sex, BMI, **batch** |
+| GSE76894 | External validation | recorded T2D vs ND, adjusted for age, sex, BMI, **batch** |
 | GSE38642 | Same-biobank companion | 53/89 donor overlap with GSE50244; **not** independent |
 | GSE20966 | Orthogonal LCM check | 10 vs 10; underpowered |
 
