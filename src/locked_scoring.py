@@ -208,9 +208,10 @@ def zscore_rows(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def score_sets(
-    gene_expr: pd.DataFrame, gene_sets: dict[str, list[str]], id_map: dict[str, str] | None = None
+    gene_expr: pd.DataFrame, gene_sets: dict[str, list[str]], id_map: dict[str, str] | None = None, reduce: str = "mean"
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     id_map = id_map or {}
+    reduce = str(reduce).lower()
     present_idx = set(gene_expr.index)
     z = zscore_rows(gene_expr)
     score_rows = {}
@@ -230,7 +231,13 @@ def score_sets(
             else:
                 missing.append(g)
         if used_ids:
-            score_rows[set_name] = z.loc[used_ids].mean(axis=0, skipna=True)
+            block = z.loc[used_ids]
+            if reduce == "mean":
+                score_rows[set_name] = block.mean(axis=0, skipna=True)
+            elif reduce == "median":
+                score_rows[set_name] = block.median(axis=0, skipna=True)
+            else:
+                raise ValueError(f"unknown reduce={reduce!r}")
         else:
             score_rows[set_name] = pd.Series(np.nan, index=gene_expr.columns)
         coverage.append(

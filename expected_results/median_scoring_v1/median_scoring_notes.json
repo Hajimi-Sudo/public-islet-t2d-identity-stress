@@ -1,0 +1,11 @@
+{
+  "role": "additional_mean_vs_median_scoring",
+  "replaces_primary_four_tests": false,
+  "primary_reduce": "mean of gene-wise z-scores",
+  "additional_reduce": "median of gene-wise z-scores",
+  "also": [
+    "drop_IAPP on GSE50244 identity",
+    "drop_INS on GSE76894 identity"
+  ],
+  "note": "Median scoring down-weights extreme genes such as INS. It does not replace the locked mean score."
+}

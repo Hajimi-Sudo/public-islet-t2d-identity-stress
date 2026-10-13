@@ -62,13 +62,15 @@ From `expected_results/locked_scores_v1/primary_four_tests.csv`:
 | GSE76894 | IDENTITY | score ~ T2D + age + sex + BMI + batch | 102 | −0.569 | 0.015 | supported (down) |
 | GSE76894 | STRESS | same | 102 | −0.181 | 0.19 | **not** up |
 
-Joint identity-down **and** stress-up language is blocked. Sensitivity analyses (drop-5 identity genes, drop INS, leave-one-gene-out, drop batch 6, 500 outcome permutations with seed 66) must not replace these four tests.
+Joint identity-down **and** stress-up language is blocked. Sensitivity analyses (drop-5 identity genes, drop INS, leave-one-gene-out, drop batch 6, 500 outcome permutations with seed 66, mean-versus-median scoring) must not replace these four tests.
 
 Additional bulk-composition checks score three short marker means that **do not overlap** `IDENTITY_CORE_v1`: a 4-gene β-cell abundance proxy (`G6PC2`, `INSM1`, `SCGN`, `SYT13`), an exocrine contamination proxy, and a non-β endocrine proxy. These are not deconvolution. On these matrices the β-cell abundance proxy is collinear with the identity score, so reduced identity scores may partly reflect bulk β-cell abundance.
 
 An additional UPR-arm split scores PERK (`EIF2AK3`, `ATF4`, `DDIT3`, `PPP1R15A`), IRE1 (`ERN1`, `XBP1`, `HSPA5`), and ATF6 (`ATF6`, `HSPA5`, `PDIA4`) using only genes already in `STRESS_CORE_v1`. Arm scores do not replace the 18-gene stress mean.
 
 Detectable-effect checks report 80%-power MDEs from the primary OLS standard errors. GSE76894 T2D n=19 can detect large bulk differences, not small UPR effects. This is not observed-effect post-hoc power.
+
+An additional scoring-rule check replaces the gene-wise mean with a gene-wise median on the same locked genes. Mean and median donor scores are collinear; identity remains down and stress is not up. This does not replace the locked mean scores.
 
 ## Gene-set rationale
 
@@ -101,6 +103,8 @@ python3 src/run_opentargets_overlay.py
 
 # 5. Prespecified sensitivity (optional; do not promote over step 2)
 python3 src/run_sensitivity.py
+# 5d. Mean-versus-median scoring (optional; does not replace locked mean scores)
+python3 src/run_median_scoring.py
 # smoke-test only: PUBLIC_ISLET_N_PERM=5 python3 src/run_sensitivity.py
 # paper default is 500 permutations, seed 66
 
