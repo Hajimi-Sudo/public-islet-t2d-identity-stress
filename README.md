@@ -2,7 +2,7 @@
 
 Reproducible analysis code for the manuscript:
 
-**Discordant reconstruction of locked β-cell identity and stress programs in public human islet transcriptomes**
+**Bulk human islet transcriptomes reveal discordant reconstruction of β-cell identity and UPR-associated stress signatures in type 2 diabetes**
 
 Target journal: *Frontiers in Endocrinology* (Diabetes: Molecular Mechanisms).
 
