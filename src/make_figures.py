@@ -145,7 +145,7 @@ def fig4_gtex() -> None:
     ax.bar(x + w / 2, np.log10(stre + 0.1), width=w, color=RUST, label="Stress core (mean TPM)")
     ax.set_xticks(x, short, rotation=25, ha="right")
     ax.set_ylabel("log10(mean TPM + 0.1)")
-    ax.set_title("GTEx v8 public medians: identity is pancreas-selective; stress is not", loc="left", fontweight="bold")
+    ax.set_title("GTEx v8 public medians: identity high in bulk pancreas; stress genes show limited tissue specificity", loc="left", fontweight="bold")
     ax.legend(frameon=False, loc="upper left")
     ax.set_facecolor(PANEL)
     ax.text(0.0, -0.32, "Bulk pancreas, not purified islets. INS dominates the identity mean; selectivity remains after removing INS.", transform=ax.transAxes, fontsize=7.5, color=GRAY)
