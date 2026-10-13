@@ -45,5 +45,5 @@ ATF6 (ATF6, PDIA4);
 shared chaperones/ERAD (HSPA5, HSP90B1, HYOU1, DNAJC3, HERPUD1, DERL3);
 islet-relevant ER-stress genes (TXNIP, WFS1).
 
-Gene-level function and evidence: `TableS1_locked_gene_rationale.csv` (this folder) and manuscript Supplementary Tables S1–S2.
+Gene-level function and evidence: `TableS1_locked_gene_rationale.csv` (this folder).
 Hallmark overlap is an alignment check, not the source of the locked cores.

@@ -24,7 +24,7 @@ from locked_scoring import (
 )
 from paths import IDENTITY_MISSING_ON_GSE76894, SENS_OUT
 
-# Default 500 is the paper sensitivity. PUBLIC_ISLET_N_PERM can shorten a smoke test.
+# Default 500 permutations. PUBLIC_ISLET_N_PERM can shorten a smoke test.
 N_PERM = int(os.environ.get("PUBLIC_ISLET_N_PERM", "500"))
 RNG_SEED = 66
 

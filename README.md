@@ -1,11 +1,5 @@
 # Locked β-cell identity and stress scores in public human islet transcriptomes
 
-Reproducible analysis code for the manuscript:
-
-**Bulk human islet transcriptomes reveal discordant reconstruction of β-cell identity and UPR-associated stress signatures in type 2 diabetes**
-
-Target journal: *Frontiers in Endocrinology* (Diabetes: Molecular Mechanisms).
-
 This repository reconstructs two **literature-locked** gene-set scores in public human-islet transcriptomes:
 
 - `IDENTITY_CORE_v1` (21 genes): expected **down** with worse glycemia / recorded T2D
@@ -20,11 +14,11 @@ Code repository: https://github.com/Hajimi-Sudo/public-islet-t2d-identity-stress
 | Path | Contents |
 |---|---|
 | `data/locked_gene_sets/` | Frozen identity/stress sets, gene-level rationale (Table S1), composition proxies, and UPR-arm splits |
-| `data/phenotypes/` | Donor-level GEO phenotypes used in the paper |
+| `data/phenotypes/` | Donor-level GEO phenotypes used in the analysis |
 | `data/overlays/` | Frozen Open Targets MONDO_0005148 top-500 snapshot |
 | `src/` | Download, scoring, overlay, sensitivity, and figure scripts |
 | `expected_results/` | Frozen numerical snapshots, including sensitivity, composition, UPR-arm, and power checks |
-| `manuscript_figures/` | Frozen Figure 1–4 PDFs used in the manuscript |
+| `manuscript_figures/` | Frozen Figure 1–4 PDFs |
 
 ## What is **not** in git
 
@@ -106,7 +100,7 @@ python3 src/run_sensitivity.py
 # 5d. Mean-versus-median scoring (optional; does not replace locked mean scores)
 python3 src/run_median_scoring.py
 # smoke-test only: PUBLIC_ISLET_N_PERM=5 python3 src/run_sensitivity.py
-# paper default is 500 permutations, seed 66
+# default is 500 permutations, seed 66
 
 # 5b. Additional composition covariates (optional; not deconvolution)
 python3 src/run_composition_sensitivity.py
@@ -158,10 +152,6 @@ Exact URLs and expected byte sizes are in `src/download_public_data.py`. Phenoty
 ## License
 
 MIT. See `LICENSE`.
-
-## Citation
-
-See `CITATION.cff`. Cite the manuscript when it is published; until then cite this analysis code and the original GEO/GTEx/Open Targets sources.
 
 ## Repository
 

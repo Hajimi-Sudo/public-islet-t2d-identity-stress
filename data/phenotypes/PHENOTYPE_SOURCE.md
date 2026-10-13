@@ -4,7 +4,7 @@ These CSVs are **donor-level GEO sample characteristics**, parsed from each
 series matrix / SOFT metadata. They are small enough to keep in git so that
 the locked models can be rerun without re-parsing GEO headers.
 
-| File | n | Label used in the paper |
+| File | n | Label used in the analysis |
 |---|---:|---|
 | `GSE50244_phenotype.csv` | 89 | continuous `hba1c` (77 non-missing). `t2d_label` is empty / not a GEO field and must not be used as the primary endpoint |
 | `GSE76894_phenotype.csv` | 103 | `t2d_label` from `diabetes status (nd …, t2d …)`; models also use `age (years)`, `gender (m/f)`, `body mass index (bmi)`, `batch` |
